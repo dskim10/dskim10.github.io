@@ -1,5 +1,5 @@
-title: Daesung's blog
-description: Daesung's blog
+title: DS's blog
+description: DS's blog
 
 url: https://dskim10.github.io/
 baseurl: ""
@@ -20,9 +20,9 @@ navigation:
     url: /contact
 
 social:
-  github: brianmaierjr
-  twitter: brianmaierjr
-  facebook: brianmaierjr
+  github: dskim10
+  # twitter: brianmaierjr
+  # facebook: brianmaierjr
   email: dskim10@gmail.com
 
 google_analytics: "UA-58263416-1"
