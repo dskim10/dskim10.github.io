@@ -281,3 +281,4 @@ defaults:
       related: true
       # category: undefined
       toc: true
+      toc_sticky: true
