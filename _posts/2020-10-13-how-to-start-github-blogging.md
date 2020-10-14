@@ -2,7 +2,7 @@
 title: "깃헙 블로깅 시작하기"
 date: 2017-10-20 08:26:28 -0400
 tags:
-    - etc
+    - Etc
 ---
 # 필요한 것들
 ## [Jekyll](https://jekyllrb-ko.github.io/)

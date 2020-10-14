@@ -2,11 +2,10 @@
 title: "데이터 시각화"
 date: 2017-10-20 08:26:28 -0400
 tags:
-    - data_analysis
+    - DataAnalysis
+use_math: true
 ---
 ML에서 자주 사용되는 데이터 시각화 도구와 사용방법에 대해 알아보자.
-
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 # [matplotlib](https://matplotlib.org/)
 Matplotlib은 파이썬에서 MATLAB과 유사한 인터페이스로 그래프를 표시하기 위해 사용되는 라이브러리다.
