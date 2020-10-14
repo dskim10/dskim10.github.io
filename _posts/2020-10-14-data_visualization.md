@@ -3,10 +3,11 @@ title: "데이터 시각화"
 date: 2017-10-20 08:26:28 -0400
 tags:
     - DataAnalysis
+use_math: true
 ---
 ML에서 자주 사용되는 데이터 시각화 도구와 사용방법에 대해 알아보자.
 
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
 
 $$
 K(a,b) = \int \mathcal{D}x(t) \exp(2\pi i S[x]/\hbar)
@@ -95,7 +96,7 @@ ax.plot(x, cosy, 'tab:blue', linewidth=1.5)
 ```
 <center><img src = "/assets/images/2020-10-14-data_visualization_figure_4.png" width = "640"></center><br>
 
-x축의 눈금 $\pi$단위로 보기 좋게 변경해 보자. 
+x축의 눈금 $$\pi$$단위로 보기 좋게 변경해 보자. 
 ```python
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
