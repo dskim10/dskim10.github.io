@@ -48,7 +48,7 @@ fig, axes = plt.subplots(2, 3)
 ```
 axes 배열에 저장된 AxesSubplot 인스턴스에는 'axes[0, 1]'처럼 2차원 배열 인덱스를 접근할 수 있다.
 
-## 제목, 축 이름, 눈금, 범례 설정하기
+## 라벨, 범례
 
 ```python
 fig, axes = plt.subplots(1, 2)
@@ -72,6 +72,46 @@ axes[1].legend(loc='best')
 plt.show()
 ```
 <center><img src = "/assets/images/2020-10-14-data_visualization_figure_3.png" width = "800"></center><br>
+
+## 틱 설정
+싸인, 코싸인 그래프를 그려보자.
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1)
+
+# 각축의 표시 범위 지정
+ax.set_xlim([-3.5, 3.5])
+ax.set_ylim([-1.2, 1.2])
+
+x = np.linspace(-np.pi, np.pi, 200)
+siny = np.sin(x)
+cosy = np.cos(x)
+ax.plot(x, siny, 'tab:red', linewidth=1.5)
+ax.plot(x, cosy, 'tab:blue', linewidth=1.5)
+```
+<center><img src = "/assets/images/2020-10-14-data_visualization_figure_4.png" width = "640"></center><br>
+
+x축에 눈금을 보기 좋게 변경해 보자. LaTeX 문법를 
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1)
+
+# 각축의 표시 범위 지정
+ax.set_xlim([-3.5, 3.5])
+ax.set_ylim([-1.2, 1.2])
+
+# x축의 눈금 변경하기, 눈금 라벨표시에 'LaTeX 문법'을 사용할 수 있다.
+ax.set_xticks([-np.pi, -np.pi / 2, 0, np.pi / 2, np.pi])
+ax.set_xticklabels(['$-\pi$', '$-\pi/2$', '$0$', '$\pi/2$', '$\pi$'])
+
+x = np.linspace(-np.pi, np.pi, 200)
+siny = np.sin(x)
+cosy = np.cos(x)
+ax.plot(x, siny, 'tab:red', linewidth=1.5)
+ax.plot(x, cosy, 'tab:blue', linewidth=1.5)
+```
+<center><img src = "/assets/images/2020-10-14-data_visualization_figure_5.png" width = "640"></center><br>
+
 
 
 <!-- # [seaborn](https://seaborn.pydata.org/) -->
