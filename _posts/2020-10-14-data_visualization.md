@@ -46,7 +46,7 @@ ax2.scatter(np.arange(30), np.arange(30) + 3 * randn(30))
 ```python
 fig, axes = plt.subplots(2, 3)
 ```
-axes 배열에 저장된 AxesSubplot 인스턴스에는 'axes[0, 1]'처럼 2차원 배열 인덱스를 접근할 수 있다.
+axes 배열에 저장된 AxesSubplot 인스턴스에는 'axes[0, 1]'처럼 2차원 배열 인덱스로 접근할 수 있다.
 
 ## 라벨, 범례
 
@@ -74,7 +74,7 @@ plt.show()
 <center><img src = "/assets/images/2020-10-14-data_visualization_figure_3.png" width = "800"></center><br>
 
 ## 틱 설정
-싸인, 코싸인 그래프를 그려보자.
+우선 싸인, 코싸인 그래프를 그려보자.
 ```python
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
@@ -91,7 +91,7 @@ ax.plot(x, cosy, 'tab:blue', linewidth=1.5)
 ```
 <center><img src = "/assets/images/2020-10-14-data_visualization_figure_4.png" width = "640"></center><br>
 
-x축에 눈금을 보기 좋게 변경해 보자. LaTeX 문법를 
+x축의 눈금 $\pi$단위로 보기 좋게 변경해 보자. 
 ```python
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
