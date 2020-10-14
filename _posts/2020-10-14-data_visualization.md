@@ -5,11 +5,16 @@ tags:
     - DataAnalysis
 use_math: true
 ---
+
 ML에서 자주 사용되는 데이터 시각화 도구와 사용방법에 대해 알아보자.
+
+$$
+K(a,b) = \int \mathcal{D}x(t) \exp(2\pi i S[x]/\hbar)
+$$
 
 # [matplotlib](https://matplotlib.org/)
 Matplotlib은 파이썬에서 MATLAB과 유사한 인터페이스로 그래프를 표시하기 위해 사용되는 라이브러리다.
- <!-- 2002년 존 헌터(John Hunter)에의해 개발 되기 시작했고, 이후  -->
+ <!-- 2002년 존 헌터(John Hunter)에 의해 개발 되기 시작했고, 이후 -->
 
 ## Figure와 Subplot
 matplotlib에서 그래프는 Figure 객체 내에 존재한다.
