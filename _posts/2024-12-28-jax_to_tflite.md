@@ -7,3 +7,6 @@ tags:
     - LiteRT
 ---
 JAX 모델을 Tensorflow Lite(LiteRT) 모델로 변환하는 방법에 대해 알아보자
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
